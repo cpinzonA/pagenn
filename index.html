@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .container{
+            display: flex;
+           list-style: none;
+           flex-wrap: wrap;
+           padding: 3%;
+           background-color: rgb(211, 233, 15);
+           color: aliceblue;
+           width: 90%;
+           margin: 1%;
+           font-size: 30px;  
+           gap: 20px;
+           text-align: center;
+           border-radius: 15px;
+           flex-direction: column;
+        }
+  .form{
+    margin: 3%;
+    width: 90%;
+    height: 100%;
+    flex-direction: row;
+  }
+  .btn {
+    font-weight: 700;
+    border: 2px solid #333;
+    background-color: rgb(19, 48, 143);
+    margin-top: 2%;
+    padding: 2%;
+    color: rgb(236, 240, 236);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 70%;
+  }
+  .btn:hover{
+    background-color: rgb(20, 73, 220);
+    color: aliceblue;
+  }
+ 
+.poop{
+    width: 95%;
+    height: 30%;
+    border: 2px solid #333;
+    background: linear-gradient(60deg, rgb(166, 171, 185),rgb(189, 211, 231));
+    border-radius: 15px;
+    margin: 1%;
+    flex-direction: column;
+    align-content: center;
+}
+.poop1{
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 15px;
+    size: 60%;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <label class="poop1" for="username">usuario</label>
+            <input class="poop" type="text" id="username" placeholder="usuario" title="Nombre del usuario registrado">
+            <label class="poop1" for="password">contraseña</label>
+            <input class="poop" type="password" id="password" placeholder="contraseña" title="La contrasela debe tener al menos 8 caracteres">
+            <div id="mensaje" hidden flexbox:display-none;>la contraseña no cumple</div>
+            <button class="btn" id="ingresar">ingresar</button>
+        </form>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
